@@ -9,7 +9,12 @@
   "require": {
     "flarum/core": "^0.1.0-beta.8"
   },
-  "authors": [],
+  "authors": [
+    {
+      "name": "Sujit Kumar",
+      "role": "Developer"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "Therealsujitk\\ShowPassword\\": "src/"
@@ -25,7 +30,7 @@
       }
     },
     "flagrow": {
-      "discuss": ""
+      "discuss": "https://discuss.flarum.org/d/22727"
     }
   }
 }
