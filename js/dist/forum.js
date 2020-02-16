@@ -104,9 +104,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var flarum_components_LogInModal__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(flarum_components_LogInModal__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var flarum_components_SignUpModal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! flarum/components/SignUpModal */ "flarum/components/SignUpModal");
 /* harmony import */ var flarum_components_SignUpModal__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(flarum_components_SignUpModal__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var flarum_components_ChangeEmailModal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! flarum/components/ChangeEmailModal */ "flarum/components/ChangeEmailModal");
-/* harmony import */ var flarum_components_ChangeEmailModal__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(flarum_components_ChangeEmailModal__WEBPACK_IMPORTED_MODULE_4__);
-
 
 
 
@@ -114,8 +111,9 @@ __webpack_require__.r(__webpack_exports__);
 
 function showPassword() {
   var x = document.getElementsByName("password")[0];
+  var y = document.getElementById("therealsujitk-show-password");
 
-  if (x.type === "password") {
+  if (y.checked == true) {
     x.type = "text";
   } else {
     x.type = "password";
@@ -126,6 +124,7 @@ flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('therealsujit
   Object(flarum_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_components_LogInModal__WEBPACK_IMPORTED_MODULE_2___default.a.prototype, 'fields', function (fields) {
     fields.add('therealsujitk-show-password', m('label.checkbox', [m('input', {
       type: 'checkbox',
+      id: 'therealsujitk-show-password',
       onclick: function onclick() {
         showPassword();
       }
@@ -134,18 +133,11 @@ flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('therealsujit
   Object(flarum_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_components_SignUpModal__WEBPACK_IMPORTED_MODULE_3___default.a.prototype, 'fields', function (fields) {
     fields.add('therealsujitk-show-password', m('label.checkbox[style = padding-bottom: 7px]', [m('input', {
       type: 'checkbox',
+      id: 'therealsujitk-show-password',
       onclick: function onclick() {
         showPassword();
       }
     }), flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('therealsujitk.forum.show_password_label')]), 10);
-  });
-  Object(flarum_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_components_ChangeEmailModal__WEBPACK_IMPORTED_MODULE_4___default.a.prototype, 'fields', function (fields) {
-    fields.add('therealsujitk-show-password', m('label.checkbox[style = padding-bottom: 7px]', [m('input', {
-      type: 'checkbox',
-      onclick: function onclick() {
-        showPassword();
-      }
-    }), flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('therealsujitk.forum.show_password_label')]));
   });
 });
 
@@ -159,17 +151,6 @@ flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('therealsujit
 /***/ (function(module, exports) {
 
 module.exports = flarum.core.compat['app'];
-
-/***/ }),
-
-/***/ "flarum/components/ChangeEmailModal":
-/*!********************************************************************!*\
-  !*** external "flarum.core.compat['components/ChangeEmailModal']" ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = flarum.core.compat['components/ChangeEmailModal'];
 
 /***/ }),
 
