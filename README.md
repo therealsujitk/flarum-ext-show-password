@@ -25,6 +25,7 @@ composer update therealsujitk/flarum-ext-show-password
 ### Links
 
 - [Packagist](https://packagist.org/packages/therealsujitk/flarum-ext-show-password)
+- [Flarum](https://discuss.flarum.org/d/22727)
 - [Github](https://github.com/therealsujitk/flarum-ext-show-password)
 - [Donate on PayPal](https://paypal.me/therealsujitk)
 
