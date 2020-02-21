@@ -4,7 +4,7 @@
 
 A [Flarum](http://flarum.org) extension to toggle password visibility.
 
-### Screenshot
+### Preview
 
 ![Screenshot](https://i.imgur.com/pXDk2dF.png)
 
