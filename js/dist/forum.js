@@ -125,6 +125,9 @@ flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('therealsujit
     fields.add('therealsujitk-show-password', m('label.checkbox', [m('input', {
       type: 'checkbox',
       id: 'therealsujitk-show-password',
+      config: function config() {
+        showPassword();
+      },
       onclick: function onclick() {
         showPassword();
       }

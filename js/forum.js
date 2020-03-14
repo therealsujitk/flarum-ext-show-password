@@ -21,6 +21,7 @@ app.initializers.add('therealsujitk/flarum-ext-show-password', () => {
       m('input', {
         type: 'checkbox',
         id: 'therealsujitk-show-password',
+		config: () => {showPassword();},
         onclick: () => {showPassword();}
       }),
       app.translator.trans('therealsujitk.forum.show_password_label')]),
