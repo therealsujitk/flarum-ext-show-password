@@ -1,6 +1,6 @@
 # Show Password
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/therealsujitk/flarum-ext-show-password.svg)](https://packagist.org/packages/therealsujitk/flarum-ext-show-password) [![Total Downloads](https://img.shields.io/packagist/dt/therealsujitk/flarum-ext-show-password.svg)](https://packagist.org/packages/therealsujitk/flarum-ext-show-password)
+![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Latest Stable Version](https://img.shields.io/packagist/v/therealsujitk/flarum-ext-show-password.svg) ![Total Downloads](https://img.shields.io/packagist/dt/therealsujitk/flarum-ext-show-password.svg)
 
 A [Flarum](http://flarum.org) extension to toggle password visibility.
 
@@ -27,5 +27,4 @@ composer update therealsujitk/flarum-ext-show-password
 - [Packagist](https://packagist.org/packages/therealsujitk/flarum-ext-show-password)
 - [Discussion Page](https://discuss.flarum.org/d/22727)
 - [Github](https://github.com/therealsujitk/flarum-ext-show-password)
-- [Donate on PayPal](https://paypal.me/therealsujitk)
-
+- [Donate on PayPal](https://paypal.me/suchitrakumar)
