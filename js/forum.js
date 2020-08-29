@@ -8,6 +8,16 @@ function showPassword() {
 	var x = document.getElementsByName("password")[0];
 	var y = document.getElementById("therealsujitk-show-password");
 
+	if(typeof x == "undefined" || typeof y == "undefined") {
+		if(typeof y != "undefined") {
+			var z = y.parentElement;
+			if(z.tagName.toLowerCase() == "label") {
+				z.style.display = "none";
+			}
+		}
+		return;
+	}
+
 	if (y.checked == true) {
 		x.type = "text";
 	} else {
