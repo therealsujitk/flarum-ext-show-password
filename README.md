@@ -8,6 +8,8 @@ A [Flarum](http://flarum.org) extension to toggle password visibility.
 
 ![Screenshot](https://i.imgur.com/pXDk2dF.png)
 
+> You also have the option to use the *Eye Icon* instead of the checkbox to toggle password visibility.
+
 ### Installation
 
 Use [Bazaar](https://discuss.flarum.org/d/5151-flagrow-bazaar-the-extension-marketplace) or install manually with composer:

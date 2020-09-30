@@ -137,7 +137,47 @@ flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('therealsujit
     fields.add('therealsujitk-show-password', m('label.checkbox', [m('input', {
       type: 'checkbox',
       id: 'therealsujitk-show-password',
-      config: function config() {
+      config: function config(content, isInitialized) {
+        if (!isInitialized) {
+          var x = document.getElementById("therealsujitk-show-password");
+
+          if (typeof x == "undefined") {
+            node.style.display = 'none';
+            return;
+          }
+
+          var toggleMethod = flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('therealsujitk-show-password.toggle_method');
+
+          if (toggleMethod === null || toggleMethod === '' || toggleMethod === 'checkbox') {
+            return;
+          }
+
+          var y = x.parentElement;
+
+          if (y.tagName.toLowerCase() == "label") {
+            y.style.display = "none";
+          }
+
+          var node = document.createElement('div');
+          node.innerHTML = '<i class="fas fa-eye-slash" style="transform: scale(1.5) translate(0%, -50%); margin-top: 54%;"></i>';
+          node.style = 'width: 50px; height: inherit; margin-left: -50px; padding: 0px; border: none; background: none; cursor: pointer;';
+          node.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            if (x.checked == true) {
+              node.innerHTML = '<i class="fas fa-eye-slash" style="transform: scale(1.5) translate(0%, -50%); margin-top: 54%;"></i>';
+              x.checked = false;
+            } else {
+              node.innerHTML = '<i class="fas fa-eye" style="transform: scale(1.5) translate(0%, -50%); margin-top: 54%;"></i>';
+              x.checked = true;
+            }
+
+            showPassword();
+          });
+          document.getElementsByName('password')[0].parentNode.style.display = '-webkit-box';
+          document.getElementsByName('password')[0].parentNode.append(node);
+        }
+
         showPassword();
       },
       onclick: function onclick() {
@@ -149,7 +189,47 @@ flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('therealsujit
     fields.add('therealsujitk-show-password', m('label.checkbox[style = padding-bottom: 7px]', [m('input', {
       type: 'checkbox',
       id: 'therealsujitk-show-password',
-      config: function config() {
+      config: function config(content, isInitialized) {
+        if (!isInitialized) {
+          var x = document.getElementById("therealsujitk-show-password");
+
+          if (typeof x == "undefined") {
+            node.style.display = 'none';
+            return;
+          }
+
+          var toggleMethod = flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('therealsujitk-show-password.toggle_method');
+
+          if (toggleMethod === null || toggleMethod === '' || toggleMethod === 'checkbox') {
+            return;
+          }
+
+          var y = x.parentElement;
+
+          if (y.tagName.toLowerCase() == "label") {
+            y.style.display = "none";
+          }
+
+          var node = document.createElement('div');
+          node.innerHTML = '<i class="fas fa-eye-slash" style="transform: scale(1.5) translate(0%, -50%); margin-top: 54%;"></i>';
+          node.style = 'width: 50px; height: inherit; margin-left: -50px; padding: 0px; border: none; background: none; cursor: pointer;';
+          node.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            if (x.checked == true) {
+              node.innerHTML = '<i class="fas fa-eye-slash" style="transform: scale(1.5) translate(0%, -50%); margin-top: 54%;"></i>';
+              x.checked = false;
+            } else {
+              node.innerHTML = '<i class="fas fa-eye" style="transform: scale(1.5) translate(0%, -50%); margin-top: 54%;"></i>';
+              x.checked = true;
+            }
+
+            showPassword();
+          });
+          document.getElementsByName('password')[0].parentNode.style.display = '-webkit-box';
+          document.getElementsByName('password')[0].parentNode.append(node);
+        }
+
         showPassword();
       },
       onclick: function onclick() {
