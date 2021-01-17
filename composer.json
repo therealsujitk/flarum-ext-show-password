@@ -2,17 +2,25 @@
   "name": "therealsujitk/flarum-ext-show-password",
   "description": "Toggle password visibility.",
   "keywords": [
-    "flarum"
-  ],
+    "password",
+    "visibility"
+],
   "type": "flarum-extension",
   "license": "MIT",
+  "support": {
+    "issues": "https://github.com/therealsujitk/flarum-ext-show-password/issues",
+    "source": "https://github.com/therealsujitk/flarum-ext-show-password",
+    "forum": "https://discuss.flarum.org/d/22727"
+  },
+  "homepage": "https://therealsuji.tk",
   "require": {
-    "flarum/core": "^0.1.0-beta.8"
+    "flarum/core": "^0.1.0-beta.15"
   },
   "authors": [
     {
       "name": "Sujit Kumar",
-      "role": "Developer"
+      "role": "Developer",
+      "email": "me@therealsuji.tk"
     }
   ],
   "autoload": {
@@ -28,9 +36,6 @@
         "backgroundColor": "#ff9c59",
         "color": "#000000"
       }
-    },
-    "flagrow": {
-      "discuss": "https://discuss.flarum.org/d/22727"
     }
   }
 }
